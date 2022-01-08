@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyBlog">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="我的发布"
+            android:textColor="@color/black"
+            android:textSize="26dp"></TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:hint="请输入关键字查找"></EditText>
+
+        <ImageButton
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/search" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/cardview_shadow_start_color"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="530dp">
+
+        4
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/cardview_shadow_start_color"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="24dp"
+        android:layout_marginTop="6dp">
+
+        <ImageButton
+            android:id="@+id/homebtn"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:adjustViewBounds="true"
+
+            android:background="@mipmap/home" />
+
+        <ImageButton
+            android:id="@+id/matchbtn"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="44dp"
+            android:background="@mipmap/match" />
+
+        <ImageButton
+            android:id="@+id/postbtn"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="44dp"
+            android:background="@drawable/post" />
+
+        <ImageButton
+            android:id="@+id/messagebtn"
+            android:layout_width="29dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="44dp"
+            android:background="@mipmap/message" />
+
+        <ImageButton
+            android:id="@+id/userbtn"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="44dp"
+            android:background="@mipmap/user" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:textSize="10dp"
+            android:text="首页"/>
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:textSize="10dp"
+            android:layout_marginLeft="58dp"
+            android:text="匹配"/>
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:textSize="10dp"
+            android:layout_marginLeft="55dp"
+            android:text="发帖"/>
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:textSize="10dp"
+            android:layout_marginLeft="54dp"
+            android:text="消息"/>
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:textSize="10dp"
+            android:text="我的"/>
+    </LinearLayout>
+
+</LinearLayout>

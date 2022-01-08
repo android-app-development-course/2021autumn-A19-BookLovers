@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".input_comment">
+
+    <androidx.appcompat.widget.Toolbar xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/com_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        custom:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/btn_return"
+            android:layout_width="64dp"
+            android:layout_height="33dp"
+            android:layout_gravity="left"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="我的评论"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/btn_com"-->
+        <!--            android:layout_width="64dp"-->
+        <!--            android:layout_height="33dp"-->
+        <!--            android:layout_gravity="right"-->
+        <!--            android:layout_marginRight="20dp"-->
+        <!--            android:clickable="true"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="发布"-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:textSize="18sp" />-->
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/comment_et"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_below="@+id/com_toolbar"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/comment_dialog_et_selector"
+        android:gravity="left|top"
+        android:hint="请输入评论内容..."
+        android:paddingLeft="15dp"
+        android:paddingTop="12dp"
+        android:textColor="#808080"
+        android:textColorHint="#929292"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_et">
+
+        <Button
+            android:id="@+id/comment_bt"
+            android:layout_width="72dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="14dp"
+            android:background="@color/white"
+            android:text="发布"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

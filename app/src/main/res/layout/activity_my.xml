@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDBDBDB"
+    android:orientation="vertical"
+    tools:context=".My">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            app:srcCompat="@mipmap/myp_foreground" />
+
+        <TextView
+            android:id="@+id/my_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:text="华师" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text="我的"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/my_pub"
+                android:layout_width="142dp"
+                android:layout_height="match_parent"
+                android:drawableTop="@mipmap/page_foreground"
+                android:gravity="center"
+                android:text="我发布的"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/col"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableTop="@mipmap/col_foreground"
+                android:gravity="center"
+                android:text="个人信息"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/his"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableTop="@mipmap/his_foreground"
+                android:gravity="center"
+                android:text="历史"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text="其他"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/setting"
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:drawableTop="@mipmap/set_foreground"
+                android:gravity="center"
+                android:text="设置"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableTop="@mipmap/feed_foreground"
+                android:gravity="center"
+                android:text="反馈"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/abt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableTop="@mipmap/abt_foreground"
+                android:gravity="center"
+                android:scaleType="center"
+                android:text="关于"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
